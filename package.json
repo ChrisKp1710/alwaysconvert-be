@@ -1,0 +1,41 @@
+{
+  "name": "alwaysconvert-be",
+  "version": "1.0.0",
+  "description": "Be - alwaysconvert per avere prestazioni di conversioni ottimali",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisKp1710/alwaysconvert-be.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisKp1710/alwaysconvert-be/issues"
+  },
+  "homepage": "https://github.com/ChrisKp1710/alwaysconvert-be#readme",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "helmet": "^8.1.0",
+    "multer": "^1.4.5-lts.2"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.13.14",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
