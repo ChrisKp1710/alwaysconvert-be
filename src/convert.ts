@@ -4,7 +4,6 @@ import { join } from "path";
 import { randomUUID } from "crypto";
 import archiver from "archiver";
 import ffmpeg from "fluent-ffmpeg";
-//import type { Express } from "express";
 
 // Tipo per il risultato da restituire al frontend
 type ConvertedResult = {
@@ -123,8 +122,17 @@ function getMimeType(filename: string): string {
   const ext = getExtension(filename);
   const types: Record<string, string> = {
     webp: "image/webp",
+    jpg: "image/jpeg",
+    jpeg: "image/jpeg",
+    png: "image/png",
+    gif: "image/gif",
     mp3: "audio/mpeg",
+    wav: "audio/wav",
+    ogg: "audio/ogg",
     mp4: "video/mp4",
+    mov: "video/quicktime",
+    avi: "video/x-msvideo",
+    webm: "video/webm",
     zip: "application/zip",
   };
   return types[ext] || "application/octet-stream";
